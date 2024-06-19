@@ -16,4 +16,4 @@ const container = document.querySelector(".container");
     }
   }
 
-  makeGrid();
+makeGrid();
