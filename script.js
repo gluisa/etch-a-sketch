@@ -1,19 +1,21 @@
 const container = document.querySelector(".container");
+const redcontainer = document.querySelector(".redcontainer");
 
   function makeGrid() {
     for (i = 0; i < 16; i++) {
       const row = document.createElement("div");
       row.className = "row";
       container.appendChild(row);
-      row.textContent = i;
+    //  row.textContent = i;
 
       for (j = 0; j < 16; j++) {
         const col = document.createElement("div");
         col.className = "col";
         row.appendChild(col);
-        col.textContent = j;
+      //  col.textContent = j;
       }
     }
+    redcontainer.appendChild(redcontainer);
   }
 
-makeGrid();
+  makeGrid();

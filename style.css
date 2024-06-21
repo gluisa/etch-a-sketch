@@ -9,14 +9,26 @@ body {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   grid-template-columns: repeat(3, auto);
+ 
 }
 
 .container div {
   width: 20px;
   height: 20px;
   text-align: center;
-  border: 1px solid blue;
-  background-color: pink;
+  border: 1px solid black;
+  background-color: hsl(240, 3%, 94%);
   display: inline-block;
   float: left;
+  position: relative;
+  /* Move the element to the right by 50% of the container's width */
+  left: 70%;
+  /* Calculates 50% of the element's width, and moves it by that */ 
+  /* amount across the X-axis to the left */
+  transform: translateX(-70%);
+
+
+
 }
+
+
