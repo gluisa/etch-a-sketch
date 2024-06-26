@@ -1,3 +1,23 @@
+.smallBox {
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.permahover {
+  background: blue;
+}
+
+h1 {
+  text-align: center;
+}
+
+.bigContainer {
+  text-align: center;
+}
+
+/*
 html,
 body {
   height: 100%;
@@ -9,7 +29,7 @@ body {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   grid-template-columns: repeat(3, auto);
- 
+  background-color: red;
 }
 
 .container div {
@@ -21,14 +41,9 @@ body {
   display: inline-block;
   float: left;
   position: relative;
-  /* Move the element to the right by 50% of the container's width */
   left: 70%;
-  /* Calculates 50% of the element's width, and moves it by that */ 
-  /* amount across the X-axis to the left */
   transform: translateX(-70%);
-
-
-
 }
 
+*/
 

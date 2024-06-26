@@ -1,21 +1,19 @@
-const container = document.querySelector(".container");
-const redcontainer = document.querySelector(".redcontainer");
+var n=16; //take grid column value as you want
 
-  function makeGrid() {
-    for (i = 0; i < 16; i++) {
-      const row = document.createElement("div");
-      row.className = "row";
-      container.appendChild(row);
-    //  row.textContent = i;
+const bigContainer = document.querySelector('.bigContainer')
 
-      for (j = 0; j < 16; j++) {
-        const col = document.createElement("div");
-        col.className = "col";
-        row.appendChild(col);
-      //  col.textContent = j;
-      }
+for(var i = 1; i < n; i++) {
+    bigContainer.innerHTML+='<div class="row">';
+
+    for(j = 0; j < n; j++) {
+        bigContainer.innerHTML+='<div class="smallBox">';
     }
-    redcontainer.appendChild(redcontainer);
-  }
+}
 
-  makeGrid();
+const smallBox = document.querySelector('.smallBox');
+
+bigContainer.addEventListener('mouseover', () => {
+    if (event.target.matches('.smallBox')) {
+        event.target.classList.add('permahover');
+    }
+});
