@@ -17,3 +17,4 @@ bigContainer.addEventListener('mouseover', () => {
         event.target.classList.add('permahover');
     }
 });
+
